@@ -17,8 +17,11 @@ class Pokemon
 
   def self.find(id, db)
     pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?", id).first
-    binding.pry
     pokemon_hash = {}
-    self.new(pokemon)
+    pokemon_hash[:id] = pokemon[0]
+    pokemon_hash[:name] = pokemon[1]
+    pokemon_hash[:type] = pokemon[2]
+    pokemon_hash[:db] = db    
+    self.new(pokemon_hash)
   end
 end
