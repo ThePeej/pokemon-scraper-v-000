@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pokemon
 
   def initialize(pokemon)
