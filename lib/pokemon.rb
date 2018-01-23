@@ -1,6 +1,7 @@
 class Pokemon
 
   def initialize(pokemon)
+    binding.pry
     @id = pokemon.id
     @name = pokemon.name
     @type = pokemon.type
