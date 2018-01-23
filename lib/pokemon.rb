@@ -3,7 +3,7 @@ require 'pry'
 class Pokemon
 
   def initialize(pokemon)
-    binding.pry
+    # binding.pry
     @id = pokemon[:id]
     @name = pokemon[:name]
     @type = pokemon[:type]
