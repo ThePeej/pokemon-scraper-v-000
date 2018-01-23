@@ -8,7 +8,7 @@ class Pokemon
     @id = pokemon[:id]
     @name = pokemon[:name]
     @type = pokemon[:type]
-    @hp = pokemon[:hp] if @hp != nil
+    @hp = pokemon[:hp] if pokemon[:hp]
     @db = pokemon[:db]
   end
 
