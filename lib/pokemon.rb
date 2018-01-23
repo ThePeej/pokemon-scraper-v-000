@@ -8,6 +8,7 @@ class Pokemon
     @id = pokemon[:id]
     @name = pokemon[:name]
     @type = pokemon[:type]
+    @hp = pokemon[:hp]
     @db = pokemon[:db]
   end
 
