@@ -21,7 +21,7 @@ class Pokemon
     pokemon_hash[:id] = pokemon[0]
     pokemon_hash[:name] = pokemon[1]
     pokemon_hash[:type] = pokemon[2]
-    pokemon_hash[:db] = db    
+    pokemon_hash[:db] = db 
     self.new(pokemon_hash)
   end
 end
